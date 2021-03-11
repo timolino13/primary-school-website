@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RiconoscereFotoComponent } from './riconoscere-foto.component';
+import { HomeComponent } from './home.component';
 
-describe('RiconoscereFotoComponent', () => {
-  let component: RiconoscereFotoComponent;
-  let fixture: ComponentFixture<RiconoscereFotoComponent>;
+describe('HomeComponent', () => {
+  let component: HomeComponent;
+  let fixture: ComponentFixture<HomeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RiconoscereFotoComponent ]
+      declarations: [ HomeComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RiconoscereFotoComponent);
+    fixture = TestBed.createComponent(HomeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
