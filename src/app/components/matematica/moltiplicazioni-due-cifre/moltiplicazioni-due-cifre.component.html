@@ -1,1 +1,14 @@
-<p>moltiplicazioni-due-cifre works!</p>
+<body>
+<div>
+  <label *ngIf="!answered">
+    {{valueOne}} * {{valueTwo}} =
+    <input type="number" (keyup.enter)="verifyAnswer()" [(ngModel)]="result">
+    <button (click)="verifyAnswer()">Verify</button>
+  </label>
+  <div *ngIf="answered">
+    <label *ngIf="answeredCorrectly">Correct!<br>{{valueOne}} * {{valueTwo}} = {{correctResult}}</label>
+    <label *ngIf="!answeredCorrectly">Wrong!<br>{{valueOne}} * {{valueTwo}} = {{correctResult}}</label>
+    <button (click)="next()">Next</button>
+  </div>
+</div>
+</body>
