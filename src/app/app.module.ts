@@ -16,6 +16,7 @@ import {CalcoliVirgolaComponent} from './components/matematica/calcoli-virgola/c
 import {FrazioniComponent} from './components/matematica/frazioni/frazioni.component';
 import {HomeComponent} from './containers/home/home.component';
 import {RiconoscereSoldiComponent} from './components/conoscenzeGenerali/riconoscere-soldi/riconoscere-soldi.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import {RiconoscereSoldiComponent} from './components/conoscenzeGenerali/riconos
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
