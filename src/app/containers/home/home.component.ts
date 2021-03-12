@@ -9,7 +9,7 @@ export class HomeComponent implements OnInit {
 
   cards = [
     {path: '/matematica', image: 'assets/matematica/Matematica.jpeg', title: 'Matematica'},
-    {path: '/culturaGenerale', image: 'assets/CulturaGenerale.jpeg', title: 'CulturaGenerale'},
+    {path: '/conoscenzeGenerali', image: 'assets/conoscenzeGenerali/ConoscenzeGenerali.jpeg', title: 'CulturaGenerale'},
   ];
 
   constructor() {

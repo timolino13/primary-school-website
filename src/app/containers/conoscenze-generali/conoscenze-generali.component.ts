@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-conoscenze-generali',
@@ -7,7 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConoscenzeGeneraliComponent implements OnInit {
 
-  constructor() { }
+  cards = [
+    {path: '/conoscenzeGenerali/leggere-orologio', image: '', title: 'Leggere l\'orologio'},
+    {path: '/conoscenzeGenerali/misure-lunghezza', image: '', title: 'Misure di lunghezza'},
+    {path: '/conoscenzeGenerali/misure-peso', image: '', title: 'Misure di peso'},
+    {path: '/conoscenzeGenerali/riconoscere-soldi', image: '', title: 'Riconoscere i soldi'},
+  ];
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
