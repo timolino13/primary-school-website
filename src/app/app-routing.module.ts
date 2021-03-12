@@ -11,16 +11,20 @@ import {LeggereOrologioComponent} from './components/conoscenzeGenerali/leggere-
 import {MisureLunghezzaComponent} from './components/conoscenzeGenerali/misure-lunghezza/misure-lunghezza.component';
 import {MisurePesoComponent} from './components/conoscenzeGenerali/misure-peso/misure-peso.component';
 import {RiconoscereSoldiComponent} from './components/conoscenzeGenerali/riconoscere-soldi/riconoscere-soldi.component';
+import {MatematicaComponent} from './containers/matematica/matematica.component';
+import {ConoscenzeGeneraliComponent} from './containers/conoscenze-generali/conoscenze-generali.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
+  {path: 'matematica', component: MatematicaComponent},
   {path: 'matematica/calcoli-virgola', component: CalcoliVirgolaComponent},
   {path: 'matematica/divisioni', component: DivisioniComponent},
   {path: 'matematica/frazioni', component: FrazioniComponent},
   {path: 'matematica/moltiplicazioni-due-cifre', component: MoltiplicazioniDueCifreComponent},
   {path: 'matematica/moltiplicazioni-virgola', component: MoltiplicazioniVirgolaComponent},
   {path: 'matematica/piu-meno', component: PiuMenoComponent},
+  {path: 'conoscenzeGenerali', component: ConoscenzeGeneraliComponent},
   {path: 'conoscenzeGenerali/leggere-orologio', component: LeggereOrologioComponent},
   {path: 'conoscenzeGenerali/misure-lunghezza', component: MisureLunghezzaComponent},
   {path: 'conoscenzeGenerali/misure-peso', component: MisurePesoComponent},
