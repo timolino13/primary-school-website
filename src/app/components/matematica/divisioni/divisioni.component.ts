@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {NumberPair} from '../../../models/NumberPair';
 
 @Component({
   selector: 'app-divisioni',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DivisioniComponent implements OnInit {
 
-  constructor() { }
+  divisionPair: NumberPair | undefined;
+
+  constructor() {
+  }
 
   ngOnInit(): void {
+    this.initPair();
+  }
+
+  initPair(): void {
+    const dividend = Math.ceil(Math.random() * 10);
+    const multiple = Math.ceil(Math.random() * 10);
+    const divisor = multiple * dividend;
+
+    this.divisionPair = new NumberPair(divisor, divisor);
   }
 
 }
