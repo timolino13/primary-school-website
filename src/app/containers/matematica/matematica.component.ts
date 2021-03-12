@@ -8,12 +8,12 @@ import {Component, OnInit} from '@angular/core';
 export class MatematicaComponent implements OnInit {
 
   cards = [
-    {path: '/matematica/calcoli-virgola', title: 'Calcoli con numeri con la virgola'},
-    {path: '/matematica/divisioni', title: 'Divisioni intere semplici'},
-    {path: '/matematica/frazioni', title: 'Frazioni'},
-    {path: '/matematica/moltiplicazioni-due-cifre', title: 'Moltiplicazioni a due cifre'},
-    {path: '/matematica/moltiplicazioni-virgola', title: 'Moltiplicazioni con la virgola'},
-    {path: '/matematica/piu-meno', title: 'Più, meno oltre il mille'}
+    {path: '/matematica/calcoli-virgola', image: '', title: 'Calcoli con numeri con la virgola'},
+    {path: '/matematica/divisioni', image: '', title: 'Divisioni intere semplici'},
+    {path: '/matematica/frazioni', image: '', title: 'Frazioni'},
+    {path: '/matematica/moltiplicazioni-due-cifre', image: '', title: 'Moltiplicazioni a due cifre'},
+    {path: '/matematica/moltiplicazioni-virgola', image: '', title: 'Moltiplicazioni con la virgola'},
+    {path: '/matematica/piu-meno', image: '', title: 'Più, meno oltre il mille'}
   ];
 
   constructor() {

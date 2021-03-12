@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  cards = [
+    {path: '/matematica', image: 'assets/matematica/Matematica.jpeg', title: 'Matematica'},
+    {path: '/culturaGenerale', image: 'assets/CulturaGenerale.jpeg', title: 'CulturaGenerale'},
+  ];
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
