@@ -3,14 +3,19 @@
 <div>
   <label>
     {{divisionPair.first}} / {{divisionPair.second}} =
-    <input type="number" (keyup.enter)="verifyAnswer()" [(ngModel)]="result">
-    <button (click)="verifyAnswer()">Verify</button>
+    <input type="number" (keyup.enter)="verifyAnswer()" [(ngModel)]="answer.input">
+    <button (click)="answer.registered ? next() : verifyAnswer()">
+      <div *ngIf="answer.registered">
+        Next
+      </div>
+      <div *ngIf="!answer.registered">
+        Verify
+      </div>
+    </button>
   </label>
-  <div *ngIf="verifyAnswer()">
-    You answered the question and this is it!
-<!--    <label *ngIf="answeredCorrectly">Correct!<br>{{valueOne}} {{operator}} {{valueTwo}} = {{correctResult}}</label>&ndash;&gt;-->
-<!--    <label *ngIf="!answeredCorrectly">Wrong!<br>{{valueOne}} {{operator}} {{valueTwo}} = {{correctResult}}</label>&ndash;&gt;-->
-<!--    <button (click)="next()">Next</button>&ndash;&gt;-->
+  <div *ngIf="answer.registered">
+    <label *ngIf="answer.correct">Correct!<br></label>
+    <label *ngIf="!answer.correct">Wrong! ({{divisionPair.first}} / {{divisionPair.second}} = {{ divisionPair.first / divisionPair.second }})<br></label>
   </div>
 </div>
 </body>
