@@ -131,5 +131,8 @@
       }
     }
   },
-  "defaultProject": "PrimarySchoolProject"
+  "defaultProject": "PrimarySchoolProject",
+  "cli": {
+    "analytics": "59949c6f-8d66-4858-9eaa-ba2d8390dccd"
+  }
 }

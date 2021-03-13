@@ -8,7 +8,8 @@ import {NumberPair} from '../../../models/NumberPair';
 })
 export class DivisioniComponent implements OnInit {
 
-  divisionPair: NumberPair | undefined;
+  divisionPair: NumberPair = new NumberPair(0, 0);
+  result = 0;
 
   constructor() {
   }
@@ -18,11 +19,16 @@ export class DivisioniComponent implements OnInit {
   }
 
   initPair(): void {
-    const dividend = Math.ceil(Math.random() * 10);
-    const multiple = Math.ceil(Math.random() * 10);
-    const divisor = multiple * dividend;
+    const divisor = Math.ceil(Math.random() * 10) + 1;
+    const multiple = Math.ceil(Math.random() * 10) + 1;
+    const dividend = multiple * divisor;
 
-    this.divisionPair = new NumberPair(divisor, divisor);
+    this.divisionPair = new NumberPair(dividend, divisor);
+  }
+
+  verifyAnswer(): boolean {
+    // @ts-ignore
+    return this.divisionPair.first / this.divisionPair.second === this.result;
   }
 
 }

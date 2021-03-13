@@ -1,1 +1,16 @@
-<p>divisioni works!</p>
+<body>
+<h1>Divisioni</h1>
+<div>
+  <label>
+    {{divisionPair.first}} / {{divisionPair.second}} =
+    <input type="number" (keyup.enter)="verifyAnswer()" [(ngModel)]="result">
+    <button (click)="verifyAnswer()">Verify</button>
+  </label>
+  <div *ngIf="verifyAnswer()">
+    You answered the question and this is it!
+<!--    <label *ngIf="answeredCorrectly">Correct!<br>{{valueOne}} {{operator}} {{valueTwo}} = {{correctResult}}</label>&ndash;&gt;-->
+<!--    <label *ngIf="!answeredCorrectly">Wrong!<br>{{valueOne}} {{operator}} {{valueTwo}} = {{correctResult}}</label>&ndash;&gt;-->
+<!--    <button (click)="next()">Next</button>&ndash;&gt;-->
+  </div>
+</div>
+</body>

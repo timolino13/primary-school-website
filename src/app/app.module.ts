@@ -15,6 +15,7 @@ import { MoltiplicazioniDueCifreComponent } from './components/matematica/moltip
 import { MoltiplicazioniVirgolaComponent } from './components/matematica/moltiplicazioni-virgola/moltiplicazioni-virgola.component';
 import { CalcoliVirgolaComponent } from './components/matematica/calcoli-virgola/calcoli-virgola.component';
 import { FrazioniComponent } from './components/matematica/frazioni/frazioni.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { FrazioniComponent } from './components/matematica/frazioni/frazioni.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
