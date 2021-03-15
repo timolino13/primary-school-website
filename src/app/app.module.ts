@@ -16,6 +16,7 @@ import { MoltiplicazioniVirgolaComponent } from './components/matematica/moltipl
 import { CalcoliVirgolaComponent } from './components/matematica/calcoli-virgola/calcoli-virgola.component';
 import { FrazioniComponent } from './components/matematica/frazioni/frazioni.component';
 import {FormsModule} from '@angular/forms';
+import {HomeComponent} from './containers/home/home.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import {FormsModule} from '@angular/forms';
     MoltiplicazioniDueCifreComponent,
     MoltiplicazioniVirgolaComponent,
     CalcoliVirgolaComponent,
+    HomeComponent,
     FrazioniComponent
   ],
   imports: [
