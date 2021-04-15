@@ -1,0 +1,22 @@
+<div id="cards_landscape_wrap-2">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-2 row-cols-lg-2">
+      <div class="col mb-4"  *ngFor="let card of cards">
+        <div >
+          <a [routerLink]="card.path" routerLinkActive="true">
+            <div class="card-flyer">
+              <div class="text-box">
+                <div class="image-box">
+                  <img [src]="card.image" alt="" />
+                </div>
+                <div class="text-container">
+                  <h6>{{card.title}}</h6>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
