@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import {NumberPair} from '../../../models/NumberPair';
 import {Answer} from '../../../models/Answer';
+import {MathQuestion} from '../../../models/MathQuestion';
 
 @Component({
   selector: 'app-divisioni',
   templateUrl: './divisioni.component.html',
   styleUrls: ['./divisioni.component.scss']
 })
-export class DivisioniComponent implements OnInit {
+export class DivisioniComponent implements OnInit, MathQuestion {
 
   static UNDEFINED = 0;
 
@@ -34,7 +35,7 @@ export class DivisioniComponent implements OnInit {
   }
 
   // tslint:disable-next-line:typedef
-  private generateCalculation() {
+  generateCalculation() {
     const divisor = Math.ceil(Math.random() * 10) + 1;
     const multiple = Math.ceil(Math.random() * 9) + 1;
     const dividend = multiple * divisor;
