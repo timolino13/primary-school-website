@@ -1,9 +1,0 @@
-<body>
-<div class="card" style="width: 18rem" *ngFor="let card of cards">
-  <img class="card-img-top" [src]="card.image" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">{{card.title}}</h5>
-    <a class="btn btn-primary" [routerLink]="card.path" routerLinkActive="true">Go somewhere</a>
-  </div>
-</div>
-</body>
