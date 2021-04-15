@@ -23,7 +23,7 @@ export class CalcoliVirgolaComponent implements OnInit {
   }
 
   generateCalculation(): void {
-    this.valueOne = Math.round((Math.random() * (100 - 1) + 1) * 10) / 10;
+    this.valueOne = Math.round((Math.random() * (1000 - 1) + 1) * 10) / 10;
     switch (Math.round(Math.random())) {
       case 0:
         this.operator = '+';
