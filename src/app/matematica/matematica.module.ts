@@ -11,6 +11,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {AppComponent} from '../app.component';
 import {FormsModule} from '@angular/forms';
 import {RouterModule} from '@angular/router';
+import {AppRoutingModule} from '../app-routing.module';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import {RouterModule} from '@angular/router';
     PiuMenoComponent
   ],
   imports: [
+    AppRoutingModule,
     CommonModule,
     BrowserModule,
     FormsModule,

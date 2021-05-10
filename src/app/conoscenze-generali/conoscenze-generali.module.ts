@@ -9,6 +9,7 @@ import {RiconoscereSoldiComponent} from './components/riconoscere-soldi/riconosc
 import {FormsModule} from '@angular/forms';
 import {BrowserModule} from '@angular/platform-browser';
 import {AppComponent} from '../app.component';
+import {AppRoutingModule} from '../app-routing.module';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import {AppComponent} from '../app.component';
     RiconoscereSoldiComponent
   ],
   imports: [
+    AppRoutingModule,
     CommonModule,
     BrowserModule,
     FormsModule
