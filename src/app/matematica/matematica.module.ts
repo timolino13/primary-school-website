@@ -10,22 +10,7 @@ import {PiuMenoComponent} from './components/piu-meno/piu-meno.component';
 import {BrowserModule} from '@angular/platform-browser';
 import {AppComponent} from '../app.component';
 import {FormsModule} from '@angular/forms';
-import {RouterModule, Routes} from '@angular/router';
-
-const routes: Routes = [
-  {
-      path: 'matematica',
-      children: [
-        { path: '', component: MatematicaComponent },
-        { path: 'calcoli-virgola', component: CalcoliVirgolaComponent },
-        { path: 'divisioni', component: DivisioniComponent },
-        { path: 'frazioni', component: FrazioniComponent },
-        { path: 'moltiplicazioni-due-cifre', component: MoltiplicazioniDueCifreComponent },
-        { path: 'moltiplicazioni-virgola', component: MoltiplicazioniVirgolaComponent },
-        { path: 'piu-meno', component: PiuMenoComponent }
-      ]
-  }
-];
+import {RouterModule} from '@angular/router';
 
 
 @NgModule({
@@ -42,7 +27,6 @@ const routes: Routes = [
     CommonModule,
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(routes),
   ],
   bootstrap: [AppComponent],
   exports: [RouterModule]
