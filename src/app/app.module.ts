@@ -7,11 +7,13 @@ import {FormsModule} from '@angular/forms';
 import {HomeComponent} from './home/containers/home.component';
 import {ConoscenzeGeneraliModule} from './conoscenze-generali/conoscenze-generali.module';
 import {MatematicaModule} from './matematica/matematica.module';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

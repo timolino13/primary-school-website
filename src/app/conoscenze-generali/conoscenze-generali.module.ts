@@ -9,20 +9,6 @@ import {RiconoscereSoldiComponent} from './components/riconoscere-soldi/riconosc
 import {FormsModule} from '@angular/forms';
 import {BrowserModule} from '@angular/platform-browser';
 import {AppComponent} from '../app.component';
-import {RouterModule, Routes} from '@angular/router';
-
-const routes: Routes = [
-  {
-    path: 'conoscenze-generali',
-    children: [
-      { path: '', component: ConoscenzeGeneraliComponent },
-      { path: 'leggere-orologio', component: LeggereOrologioComponent },
-      { path: 'misure-lunghezza', component: MisureLunghezzaComponent },
-      { path: 'misure-peso', component: MisurePesoComponent },
-      { path: 'riconoscere-soldi', component: RiconoscereSoldiComponent }
-    ]
-  }
-];
 
 
 @NgModule({
@@ -37,8 +23,7 @@ const routes: Routes = [
   imports: [
     CommonModule,
     BrowserModule,
-    FormsModule,
-    RouterModule.forRoot(routes),
+    FormsModule
   ],
   bootstrap: [AppComponent]
 })
