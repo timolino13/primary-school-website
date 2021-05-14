@@ -9,6 +9,7 @@ import {FormsModule} from '@angular/forms';
 import {BrowserModule} from '@angular/platform-browser';
 import {AppComponent} from '../app.component';
 import {AppRoutingModule} from '../app-routing.module';
+import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import {AppRoutingModule} from '../app-routing.module';
         AppRoutingModule,
         CommonModule,
         BrowserModule,
-        FormsModule
+        FormsModule,
+        NgxMaterialTimepickerModule
     ],
     bootstrap: [AppComponent]
 })
