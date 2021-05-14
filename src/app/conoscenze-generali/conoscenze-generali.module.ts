@@ -4,7 +4,6 @@ import {ConoscenzeGeneraliComponent} from './containers/conoscenze-generali.comp
 import {LeggereOrologioComponent} from './components/leggere-orologio/leggere-orologio.component';
 import {MisureLunghezzaComponent} from './components/misure-lunghezza/misure-lunghezza.component';
 import {MisurePesoComponent} from './components/misure-peso/misure-peso.component';
-import {RiconoscereFotoComponent} from './components/riconoscere-foto/riconoscere-foto.component';
 import {RiconoscereSoldiComponent} from './components/riconoscere-soldi/riconoscere-soldi.component';
 import {FormsModule} from '@angular/forms';
 import {BrowserModule} from '@angular/platform-browser';
@@ -18,7 +17,6 @@ import {AppRoutingModule} from '../app-routing.module';
         LeggereOrologioComponent,
         MisureLunghezzaComponent,
         MisurePesoComponent,
-        RiconoscereFotoComponent,
         RiconoscereSoldiComponent
     ],
     imports: [

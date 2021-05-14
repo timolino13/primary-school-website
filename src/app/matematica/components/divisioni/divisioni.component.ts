@@ -1,51 +1,72 @@
-import { Component, OnInit } from '@angular/core';
-import {NumberPair} from '../../../models/NumberPair';
-import {Answer} from '../../../models/Answer';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-divisioni',
-  templateUrl: './divisioni.component.html',
-  styleUrls: ['./divisioni.component.scss']
+    selector: 'app-divisioni',
+    templateUrl: './divisioni.component.html',
+    styleUrls: ['./divisioni.component.scss']
 })
 export class DivisioniComponent implements OnInit {
 
-  static UNDEFINED = 0;
+    valueOne = 0;
+    valueTwo = 0;
+    operator = '';
+    correctAnswer = 0;
+    answers: number[] = [];
+    selectedAnswer = 0;
+    answered = false;
+    answeredCorrectly = false;
 
-  divisionPair: NumberPair = new NumberPair(0, 0);
+    constructor() {
+    }
 
-  answer: Answer<number> = new Answer<number>(
-    false,
-    false,
-    DivisioniComponent.UNDEFINED);
+    ngOnInit(): void {
+        this.next();
+    }
 
-  constructor() {
-  }
+    private generateCalculation(): void {
+        const divisor = Math.ceil(Math.random() * 10) + 1;
+        const multiple = Math.ceil(Math.random() * 9) + 1;
+        this.valueOne = multiple * divisor;
+        this.valueTwo = divisor;
 
-  ngOnInit(): void {
-    this.next();
-  }
+        this.correctAnswer = this.valueOne / this.valueTwo;
+    }
 
-  next(): void {
-    this.answer.registered = false;
-    this.answer.correct = false;
-    this.answer.input = DivisioniComponent.UNDEFINED;
+    private generateAnswers(): void {
+        this.answers = [];
+        this.answers.push(this.correctAnswer);
+        for (let i = 0; i < 3; i++) {
+            const val = Math.round(Math.random() * (9)) + 1;
+            if (this.answers.indexOf(val) === -1) {
+                this.answers.push(val);
+            } else {
+                i--;
+            }
+        }
+    }
 
-    this.generateCalculation();
-  }
+    private shuffleArray(): void {
+        for (let i = this.answers.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            const temp = this.answers[i];
+            this.answers[i] = this.answers[j];
+            this.answers[j] = temp;
+        }
+    }
 
-  // tslint:disable-next-line:typedef
-  private generateCalculation() {
-    const divisor = Math.ceil(Math.random() * 10) + 1;
-    const multiple = Math.ceil(Math.random() * 9) + 1;
-    const dividend = multiple * divisor;
+    verifyAnswer(answer: number): void {
+        this.answeredCorrectly = answer === this.correctAnswer;
+        console.log(this.answeredCorrectly);
+        this.selectedAnswer = answer;
+        this.answered = true;
+    }
 
-    this.divisionPair = new NumberPair(dividend, divisor);
-  }
-
-  verifyAnswer(): void {
-    // @ts-ignore
-    this.answer.registered = true;
-    this.answer.correct = this.divisionPair.first / this.divisionPair.second === this.answer.input;
-  }
-
+    next(): void {
+        this.generateCalculation();
+        this.generateAnswers();
+        this.shuffleArray();
+        this.answered = false;
+        this.answeredCorrectly = false;
+        this.selectedAnswer = 0;
+    }
 }
