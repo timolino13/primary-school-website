@@ -19,7 +19,7 @@ export class LeggereOrologioComponent implements OnInit, AfterViewInit {
     myEmitter = new EventEmitter();
     private hour = 0;
     private minute = 0;
-    private correctAnswer = '';
+    correctAnswer = '';
     answered = false;
     answeredCorrectly = false;
 
