@@ -8,8 +8,8 @@ import {Component, OnInit} from '@angular/core';
 export class HomeComponent implements OnInit {
 
   cards = [
-    {path: '/matematica', image: 'assets/matematica/Matematica.jpeg', title: 'Matematica'},
-    {path: '/conoscenze-generali', image: 'assets/conoscenzeGenerali/ConoscenzeGenerali.jpeg', title: 'Cultura Generale'},
+    {path: '/matematica', image: 'assets/matematica/matematica.jpeg', title: 'Matematica'},
+    {path: '/conoscenze-generali', image: 'assets/conoscenzeGenerali/conoscenzeGenerali.jpeg', title: 'Cultura Generale'},
   ];
 
   constructor() {
