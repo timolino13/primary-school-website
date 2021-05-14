@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {MatematicaComponent} from './containers/matematica.component';
 import {CalcoliVirgolaComponent} from './components/calcoli-virgola/calcoli-virgola.component';
 import {DivisioniComponent} from './components/divisioni/divisioni.component';
@@ -15,22 +15,23 @@ import {AppRoutingModule} from '../app-routing.module';
 
 
 @NgModule({
-  declarations: [
-    MatematicaComponent,
-    CalcoliVirgolaComponent,
-    DivisioniComponent,
-    FrazioniComponent,
-    MoltiplicazioniDueCifreComponent,
-    MoltiplicazioniVirgolaComponent,
-    PiuMenoComponent
-  ],
-  imports: [
-    AppRoutingModule,
-    CommonModule,
-    BrowserModule,
-    FormsModule,
-  ],
-  bootstrap: [AppComponent],
-  exports: [RouterModule]
+    declarations: [
+        MatematicaComponent,
+        CalcoliVirgolaComponent,
+        DivisioniComponent,
+        FrazioniComponent,
+        MoltiplicazioniDueCifreComponent,
+        MoltiplicazioniVirgolaComponent,
+        PiuMenoComponent
+    ],
+    imports: [
+        AppRoutingModule,
+        CommonModule,
+        BrowserModule,
+        FormsModule,
+    ],
+    bootstrap: [AppComponent],
+    exports: [RouterModule]
 })
-export class MatematicaModule { }
+export class MatematicaModule {
+}

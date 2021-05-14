@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {ConoscenzeGeneraliComponent} from './containers/conoscenze-generali.component';
 import {LeggereOrologioComponent} from './components/leggere-orologio/leggere-orologio.component';
 import {MisureLunghezzaComponent} from './components/misure-lunghezza/misure-lunghezza.component';
@@ -13,20 +13,21 @@ import {AppRoutingModule} from '../app-routing.module';
 
 
 @NgModule({
-  declarations: [
-    ConoscenzeGeneraliComponent,
-    LeggereOrologioComponent,
-    MisureLunghezzaComponent,
-    MisurePesoComponent,
-    RiconoscereFotoComponent,
-    RiconoscereSoldiComponent
-  ],
-  imports: [
-    AppRoutingModule,
-    CommonModule,
-    BrowserModule,
-    FormsModule
-  ],
-  bootstrap: [AppComponent]
+    declarations: [
+        ConoscenzeGeneraliComponent,
+        LeggereOrologioComponent,
+        MisureLunghezzaComponent,
+        MisurePesoComponent,
+        RiconoscereFotoComponent,
+        RiconoscereSoldiComponent
+    ],
+    imports: [
+        AppRoutingModule,
+        CommonModule,
+        BrowserModule,
+        FormsModule
+    ],
+    bootstrap: [AppComponent]
 })
-export class ConoscenzeGeneraliModule { }
+export class ConoscenzeGeneraliModule {
+}

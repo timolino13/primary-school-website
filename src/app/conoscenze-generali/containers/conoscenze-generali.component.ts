@@ -8,10 +8,10 @@ import {Component, OnInit} from '@angular/core';
 export class ConoscenzeGeneraliComponent implements OnInit {
 
   cards = [
-    {path: '/conoscenze-generali/leggere-orologio', image: 'assets/conoscenzeGenerali/ConoscenzeGenerali.jpeg', title: 'Leggere l\'orologio'},
-    {path: '/conoscenze-generali/misure-lunghezza', image: 'assets/conoscenzeGenerali/ConoscenzeGenerali.jpeg', title: 'Misure di lunghezza'},
-    {path: '/conoscenze-generali/misure-peso', image: 'assets/conoscenzeGenerali/ConoscenzeGenerali.jpeg', title: 'Misure di peso'},
-    {path: '/conoscenze-generali/riconoscere-soldi', image: 'assets/conoscenzeGenerali/ConoscenzeGenerali.jpeg', title: 'Riconoscere i soldi'},
+    {path: '/conoscenze-generali/leggere-orologio', image: 'assets/conoscenzeGenerali/leggere-orologio.png', title: 'Leggere l\'orologio'},
+    {path: '/conoscenze-generali/misure-lunghezza', image: 'assets/conoscenzeGenerali/conoscenzeGenerali.jpeg', title: 'Misure di lunghezza'},
+    {path: '/conoscenze-generali/misure-peso', image: 'assets/conoscenzeGenerali/conoscenzeGenerali.jpeg', title: 'Misure di peso'},
+    {path: '/conoscenze-generali/riconoscere-soldi', image: 'assets/conoscenzeGenerali/conoscenzeGenerali.jpeg', title: 'Riconoscere i soldi'},
   ];
 
   constructor() {

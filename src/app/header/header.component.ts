@@ -7,7 +7,7 @@ import {Component, OnInit} from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-    toggle = false;
+    public toggle = false;
 
     constructor() {
     }
