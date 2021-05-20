@@ -1,1 +1,25 @@
-<p>frazioni works!</p>
+<div class="container center">
+  <div class="container has-text-centered">
+    <h1 class="title is-2">
+      {{fraction1.first}} / {{fraction1.second}}
+    </h1>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <div class="row columns is-multiline">
+        <div *ngFor="let answer of answers" class="column is-6">
+          <button class="button is-fullwidth is-large" (click)="answer.registered = true"
+                  [ngClass]="{'is-success': answer.correct && answer.registered,
+                             'is-danger': !answer.correct && answer.registered}">
+            {{answer.input.first}} / {{answer.input.second}}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container has-text-centered">
+    <button class="button is-large next" (click)="next()">Next</button>
+  </div>
+</div>
