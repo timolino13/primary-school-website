@@ -1,7 +1,7 @@
 <div class="container center">
   <div class="container has-text-centered">
     <h1 class="title is-2">
-      {{fraction1.first}} / {{fraction1.second}}
+      {{fraction1.first}} {{fraction1.second == 1 ? "" : "/ " + fraction1.second}}
     </h1>
   </div>
 
@@ -12,7 +12,7 @@
           <button class="button is-fullwidth is-large" (click)="answer.registered = true"
                   [ngClass]="{'is-success': answer.correct && answer.registered,
                              'is-danger': !answer.correct && answer.registered}">
-            {{answer.input.first}} / {{answer.input.second}}
+            {{answer.input.first}} {{answer.input.second == 1 ? "" : "/ " + answer.input.second}}
           </button>
         </div>
       </div>

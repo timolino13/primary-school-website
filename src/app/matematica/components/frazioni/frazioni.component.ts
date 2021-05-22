@@ -34,8 +34,10 @@ export class FrazioniComponent implements OnInit {
   createAnswers(): void {
     const rightAns = new Answer(false, true, this.rightFraction);
     for (let i = 0; i < 3; i++) {
-      const first = Math.max(this.rightFraction.first - mathRandom(Math.round, 1, 2), 1);
-      const second = Math.max(this.rightFraction.second - mathRandom(Math.round, 1, 2), 1);
+      const plusOrSubtract = mathRandom(Math.round, 0, 1) === 1 ? 1 : -1;
+      const plusOrSubtract2 = mathRandom(Math.round, 0, 1) === 1 ? 1 : -1;
+      const first = Math.max(this.fraction1.first + plusOrSubtract * (mathRandom(Math.round, 1, this.rightFraction.first)), 1);
+      const second = Math.max(this.fraction1.second + plusOrSubtract2 * (mathRandom(Math.round, 1, this.rightFraction.second)), 1);
       const areEqualToAns = first === this.fraction1.first && second === this.rightFraction.second;
       const numberPair = areEqualToAns ? new NumberPair(this.rightFraction.first - 1, this.rightFraction.first - 1)
         : new NumberPair(first, second);
