@@ -1,1 +1,42 @@
-<p>riconoscere-soldi works!</p>
+<div class="example-container container has-text-centered">
+
+    <h1 class="title is-1">Price to pay: {{priceToPay}}</h1>
+    <h1 class="title is-1">Price paid: {{pricePaid}}</h1>
+
+    <h2 class="is-2">Cash Drawer</h2>
+    <div
+            cdkDropList
+            #doneList="cdkDropList"
+            [cdkDropListData]="drawer"
+            [cdkDropListConnectedTo]="[todoList]"
+            class="example-list"
+            (cdkDropListDropped)="drop($event)"
+            cdkDropListOrientation="horizontal"
+            cdkDropListSortingDisabled
+            [cdkDropListDisabled]="paid">
+        <div class="example-box" *ngFor="let coin of drawer" cdkDrag>
+            <img [src]="coin.image" [alt]="coin.name">
+        </div>
+    </div>
+
+    <h2 class="is-2">Coins</h2>
+    <div
+            cdkDropList
+            #todoList="cdkDropList"
+            [cdkDropListData]="coins"
+            [cdkDropListConnectedTo]="[doneList]"
+            class="example-list"
+            (cdkDropListDropped)="drop($event)"
+            cdkDropListOrientation="horizontal"
+            cdkDropListSortingDisabled
+            [cdkDropListDisabled]="paid">
+        <div class="example-box" *ngFor="let coin of coins" cdkDrag>
+            <img [src]="coin.image" [alt]="coin.name">
+        </div>
+    </div>
+
+    <div class="container has-text-centered" *ngIf="paid">
+        <br>
+        <button class="button is-large next" (click)="next()">Next</button>
+    </div>
+</div>
