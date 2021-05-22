@@ -48,11 +48,11 @@ export class MisureLunghezzaComponent implements OnInit {
     const index2 = this.units.indexOf(this.secondUnit);
 
     // questa condizione per via dei chilometri che distano di più dalle altre unità
-    const weight1 = index2 === 0 ? 3 : index2;
+    const weight1 = index1 === 0 ? -2 : index1;
     // questa condizione per via dei chilometri che distano di più dalle altre unità
-    const weight2 = index1 === 0 ? 3 : index1;
+    const weight2 = index2 === 0 ? -2 : index2;
 
-    const diff = weight1 - weight2;
+    const diff = weight2 - weight1;
     const conversionRatio = Math.pow(10, diff);
 
     this.questionAndAnswer.second = measure * conversionRatio;
@@ -64,9 +64,9 @@ export class MisureLunghezzaComponent implements OnInit {
       const isGreaterThanZero = mathRandom(Math.round, 0, 1) === 0;
       const falseMultiplier = isGreaterThanZero ? mathRandom(Math.round, 1, 3) : -mathRandom(Math.round, 1, 3);
       const falseAnswer = this.questionAndAnswer.second * Math.pow(10, falseMultiplier);
-      this.answers.push(new Answer(false, false, parseFloat(falseAnswer.toFixed(4))));
+      this.answers.push(new Answer(false, false, parseFloat(falseAnswer.toFixed(6))));
     }
-    this.answers.push(new Answer(false, true, parseFloat(this.questionAndAnswer.second.toFixed(4))));
+    this.answers.push(new Answer(false, true, parseFloat(this.questionAndAnswer.second.toFixed(6))));
   }
 
   ngOnInit(): void {
