@@ -10,6 +10,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {AppComponent} from '../app.component';
 import {AppRoutingModule} from '../app-routing.module';
 import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
         CommonModule,
         BrowserModule,
         FormsModule,
-        NgxMaterialTimepickerModule
+        NgxMaterialTimepickerModule,
+        DragDropModule
     ],
     bootstrap: [AppComponent]
 })
