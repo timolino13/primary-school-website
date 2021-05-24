@@ -10,12 +10,14 @@ import {MatematicaModule} from './matematica/matematica.module';
 import {HeaderComponent} from './header/header.component';
 import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
 import {DragDropModule} from '@angular/cdk/drag-drop';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         HomeComponent,
-        HeaderComponent
+        HeaderComponent,
+        FooterComponent
     ],
     imports: [
         BrowserModule,

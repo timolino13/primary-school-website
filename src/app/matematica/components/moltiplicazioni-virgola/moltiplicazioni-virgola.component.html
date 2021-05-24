@@ -1,1 +1,25 @@
-<p>moltiplicazioni-virgola works!</p>
+<div class="wallpaper">
+  <div class="container center">
+    <div class="container has-text-centered">
+      <h1 class="title is-2">
+        {{valueOne}} {{operator}} {{valueTwo}} =
+      </h1>
+    </div>
+
+
+    <div class="container has-text-centered">
+      <button class="button is-large next next_button" (click)="next()">Next</button>
+    </div>
+    <div class="d-flex justify-content-center">
+      <div class="row w-75 align-items-end">
+        <div *ngFor="let answer of answers" class="col col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+          <button class="button is-fullwidth is-large" (click)="verifyAnswer(answer)"
+                  [ngClass]="{'correct-answer': answer == correctAnswer && answered,
+                             'wrong-answer': answer != correctAnswer && answer == selectedAnswer && !answeredCorrectly}">
+            {{answer}}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -33,6 +33,7 @@ export class LeggereOrologioComponent implements OnInit, AfterViewInit {
         this.radius = this.radius * 0.90;
 
         console.log(this.radius);
+        console.log('answered:' + this.answered);
     }
 
     ngAfterViewInit(): void {

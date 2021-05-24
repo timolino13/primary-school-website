@@ -1,4 +1,143 @@
-.center {
-  padding: 70px 0;
-  text-align: center;
+body {
+  background-image: url("../../../../assets/home/geometry2.png");
 }
+
+canvas {
+  margin-top: 70px;
+}
+
+.center {
+  padding: 0 0;
+  text-align: center;
+  background-image: url("../../../../assets/home/sky_wallpaper.jpg");
+  border: 6px solid black;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  height: 768px;
+  width: 1024px;
+  margin-top: 20px;
+}
+
+.wallpaper {
+  background-image: url("../../../../assets/home/geometry2.png");
+  height:1000px;
+  margin-top: 0;
+}
+
+.col-xs-12 button {
+  background: url("../../../../assets/home/cg_button.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  height: 95px;
+  border:none;
+}
+
+.next_button {
+  background: url("../../../../assets/home/next_button.png")!important;
+  background-repeat: no-repeat!important;
+  background-position-x: center!important;
+  height: 38px;
+  width: 124px;
+  border:none;
+}
+
+.title {
+  margin-top: 30px;
+  font-size: 40px;
+  color: #ffa02f;
+}
+
+.correct-answer {
+  background: url("../../../../assets/home/cg_button_success.png")!important;
+  background-repeat: no-repeat!important;
+  background-position-x: center!important;
+  height: 95px!important;
+  border:none;
+}
+
+.next_button {
+  background: url("../../../../assets/home/next_button.png")!important;
+  background-repeat: no-repeat!important;
+  background-position-x: center!important;
+  height: 38px;
+  width: 124px;
+  border:none;
+}
+
+.wrong-answer {
+  background: url("../../../../assets/home/cg_button_error.png")!important;
+  background-repeat: no-repeat!important;
+  background-position-x: center!important;
+  height: 95px!important;
+  border:none;
+}
+
+@media screen and (max-width: 1180px){
+  .center {
+    background-image: url("../../../../assets/home/sky_wallpaper_ipad.jpg");
+    border: 4px solid black;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    height: 576px;
+    width: 768px;
+  }
+
+  .title {
+    margin-top: 20px;
+    font-size: 30px;
+    color: #ffa02f;
+  }
+
+  canvas {
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+  }
+
+  .d-flex {
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .wallpaper {
+    height: 380px;
+  }
+  .center {
+    background-image: url("../../../../assets/home/sky_wallpaper_phone.jpg");
+    border: none;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    height: 364px;
+    width: 375px;
+  }
+  .title {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #ffa02f;
+    padding-top: 20px;
+  }
+
+  canvas {
+    width: 160px;
+    height: 160px;
+    margin-top: 30px;
+  }
+
+  .d-flex {
+    margin-top: 10px;
+  }
+
+  .next_button {
+    background: url("../../../../assets/home/next_button_phone.png")!important;
+    background-repeat: no-repeat!important;
+    background-position-x: center!important;
+    height: 29px;
+    width: 95px;
+    border:none;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+}
+
+

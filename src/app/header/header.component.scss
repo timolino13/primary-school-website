@@ -1,3 +1,91 @@
 a {
   text-decoration: none;
 }
+nav {
+  font-family: "Londrina Solid";
+  font-size: x-large;
+  text-transform: uppercase;
+}
+
+.navbar-link a:hover {
+  background-color: #614E78;
+  color: white;
+}
+
+
+a {
+  color: white;
+}
+
+.red {
+  color: #fb6b47;
+}
+
+.orange {
+  color: #ff911b;
+}
+
+.yellow {
+  color: #ffc000;
+}
+
+.green {
+  color: #a7c850;
+}
+
+.light-blue {
+  color: #5bc4db;
+}
+
+.blue {
+  color: #7a8ed9;
+}
+
+.zig-zag-bottom{
+  background-color: rgb(97, 78, 120);
+}
+
+.zig-zag-bottom,
+.zig-zag-top{
+  padding: 0px 0;
+}
+
+.zig-zag-bottom:after{
+  background:
+    linear-gradient(-45deg, transparent 16px, #614E78 0),
+    linear-gradient(45deg, transparent 16px, #614E78  0);
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  background-size: 22px 32px;
+  content: "";
+  display: block;
+
+  width: 100%;
+  height: 10px;
+
+  position: relative;
+  top:10px;
+  left:0px;
+}
+
+@media screen and (max-width: 1180px){
+  .zig-zag-bottom, .zig-zag-top {
+    /*background: none;*/
+  }
+  .zig-zag-bottom:after {
+    background: none;
+  }
+  .navbar-burger {
+    background: #614E78;
+    margin-right: 5px;
+    border-radius: 5px;
+    color: white;
+  }
+  a {
+    color: #614E78;
+  }
+  img {
+    margin-left: 20px;
+  }
+}
+

@@ -1,70 +1,69 @@
-<nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-        <figure class="image is-128x128" >
-            <img src="assets/logo/logo_transparent.png" alt="logo" [routerLink]="'home'">
-        </figure>
-    </div>
+<nav class="navbar zig-zag-bottom zig-zag-top" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand" >
+    <img src="assets/logo/logo_navbar.png"  alt="logo" [routerLink]="'home'">
+  </div>
 
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" (click)="burgerEvent()"
-       [ngClass]="{'is-active': toggle}">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-    </a>
+  <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" (click)="burgerEvent()"
+     [ngClass]="{'is-active': toggle}">
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+  </a>
 
-    <div class="navbar-menu" [ngClass]="{'is-active': toggle}">
-        <div class="navbar-start">
-            <a class="navbar-item" [routerLink]="'home'">
-                Home
-            </a>
+  <div class="navbar-menu" [ngClass]="{'is-active': toggle}">
+    <div class="navbar-start">
+      <a class="navbar-item" [routerLink]="'home'">
+        Home
+      </a>
 
-            <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link" [routerLink]="'matematica'">
-                    Matematica
-                </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" id="mat" [routerLink]="'matematica'">
+          Matematica
+        </a>
 
-                <div class="navbar-dropdown">
-                    <a class="navbar-item" [routerLink]="'matematica/calcoli-virgola'">
-                        Calcoli con la virgola
-                    </a>
-                    <a class="navbar-item" [routerLink]="'matematica/divisioni'">
-                        Divisioni
-                    </a>
-                    <a class="navbar-item" [routerLink]="'matematica/frazioni'">
-                        Frazioni
-                    </a>
-                    <a class="navbar-item" [routerLink]="'matematica/moltiplicazioni-due-cifre'">
-                        Moltiplicazioni a due cifre
-                    </a>
-                    <a class="navbar-item" [routerLink]="'matematica/moltiplicazioni-virgola'">
-                        Moltiplicazioni con la virgola
-                    </a>
-                    <a class="navbar-item" [routerLink]="'matematica/piu-meno'">
-                        Calcoli oltre il mille
-                    </a>
-                </div>
-            </div>
-
-            <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link" [routerLink]="'conoscenze-generali'">
-                    Conoscenze generali
-                </a>
-
-                <div class="navbar-dropdown">
-                    <a class="navbar-item" [routerLink]="'conoscenze-generali/leggere-orologio'">
-                        Leggere l'orologio
-                    </a>
-                    <a class="navbar-item" [routerLink]="'conoscenze-generali/misure-lunghezza'">
-                        Misure di lunghezza
-                    </a>
-                    <a class="navbar-item" [routerLink]="'conoscenze-generali/misure-peso'">
-                        Misure di peso
-                    </a>
-                    <a class="navbar-item" [routerLink]="'conoscenze-generali/riconoscere-soldi'">
-                        Riconoscere i soldi
-                    </a>
-                </div>
-            </div>
+        <div class="navbar-dropdown">
+          <a class="navbar-item red" [routerLink]="'matematica/calcoli-virgola'" (mouseenter) ="handleHover('mat') " (mouseleave) ="handleHover('mat')">
+            Calcoli con la virgola
+          </a>
+          <a class="navbar-item orange" [routerLink]="'matematica/divisioni'" (mouseenter) ="handleHover('mat') " (mouseleave) ="handleHover('mat')">
+            Divisioni
+          </a>
+          <a class="navbar-item yellow" [routerLink]="'matematica/frazioni'" (mouseenter) ="handleHover('mat') " (mouseleave) ="handleHover('mat')">
+            Frazioni
+          </a>
+          <a class="navbar-item green" [routerLink]="'matematica/moltiplicazioni-due-cifre'" (mouseenter) ="handleHover('mat') " (mouseleave) ="handleHover('mat')">
+            Moltiplicazioni a due cifre
+          </a>
+          <a class="navbar-item light-blue" [routerLink]="'matematica/moltiplicazioni-virgola'" (mouseenter) ="handleHover('mat') " (mouseleave) ="handleHover('mat')">
+            Moltiplicazioni con la virgola
+          </a>
+          <a class="navbar-item blue" [routerLink]="'matematica/piu-meno'" (mouseenter) ="handleHover('mat') " (mouseleave) ="handleHover('mat')">
+            Calcoli oltre il mille
+          </a>
         </div>
+      </div>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" id="cg" [routerLink]="'conoscenze-generali'">
+          Conoscenze generali
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item red" [routerLink]="'conoscenze-generali/leggere-orologio'" (mouseenter) ="handleHover('cg')" (mouseleave)="handleHover('cg')">
+            Leggere l'orologio
+          </a>
+          <a class="navbar-item orange" [routerLink]="'conoscenze-generali/misure-lunghezza'" (mouseenter) ="handleHover('cg')" (mouseleave)="handleHover('cg')">
+            Misure di lunghezza
+          </a>
+          <a class="navbar-item yellow" [routerLink]="'conoscenze-generali/misure-peso'" (mouseenter) ="handleHover('cg')" (mouseleave)="handleHover('cg')">
+            Misure di peso
+          </a>
+          <a class="navbar-item green" [routerLink]="'conoscenze-generali/riconoscere-soldi'" (mouseenter) ="handleHover('cg')" (mouseleave)="handleHover('cg')">
+            Riconoscere i soldi
+          </a>
+        </div>
+      </div>
     </div>
+  </div>
 </nav>
+

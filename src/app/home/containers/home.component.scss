@@ -5,3 +5,142 @@
 .card:hover {
   box-shadow: 20px 20px 40px 0px rgba(0, 0, 0, 0.5);
 }
+.sep {
+  padding: 32px 0;
+  background-image: url("../../../assets/home/slide_2.jpg");
+  background-size: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+}
+
+.centered {
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 60%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px black;
+  color:white;
+}
+
+h1 {
+  font-family: "Londrina Solid";
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+p {
+  font-size: large;
+}
+
+/*----  Main Style  ----*/
+#cards_landscape_wrap-2{
+  text-align: center;
+  background-image: url("../../../assets/home/geometry2.png");
+  background-repeat: repeat;
+}
+#cards_landscape_wrap-2 .container{
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+#cards_landscape_wrap-2 a{
+  text-decoration: none;
+  outline: none;
+}
+#cards_landscape_wrap-2 .card-flyer {
+  border-radius: 5px;
+  padding: 0;
+  margin: 0;
+}
+#cards_landscape_wrap-2 .card-flyer .image-box{
+  background: #ffffff;
+  overflow: hidden;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+  border-radius: 5px;
+  height: 500px;
+}
+#cards_landscape_wrap-2 .card-flyer .image-box img{
+  -webkit-transition:all .9s ease;
+  -moz-transition:all .9s ease;
+  -o-transition:all .9s ease;
+  -ms-transition:all .9s ease;
+  width: 100%;
+}
+#cards_landscape_wrap-2 .card-flyer:hover .image-box img{
+  opacity: 0.7;
+  -webkit-transform:scale(1.15);
+  -moz-transform:scale(1.15);
+  -ms-transform:scale(1.15);
+  -o-transform:scale(1.15);
+  transform:scale(1.15);
+}
+#cards_landscape_wrap-2 .card-flyer .text-box{
+  text-align: center;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box .text-container{
+  padding: 30px 18px;
+}
+#cards_landscape_wrap-2 .card-flyer{
+  background-color: rgb(97, 78, 120);
+  margin-top: 50px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+}
+#cards_landscape_wrap-2 .card-flyer:hover{
+  background-color: rgb(97, 78, 120);
+  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  margin-top: 50px;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box h6{
+  margin-top: 0px;
+  margin-bottom: 4px;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Roboto Black', sans-serif;
+  letter-spacing: 1px;
+  color: white;
+}
+
+@media screen and (max-width: 1180px){
+  .sep {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  #cards_landscape_wrap-2 .card-flyer .image-box {
+    height: 340px;
+  }
+  #cards_landscape_wrap-2 .card-flyer .text-box h6 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #cards_landscape_wrap-2 .card-flyer .image-box {
+    height: 240px;
+  }
+  #cards_landscape_wrap-2 .card-flyer .text-box h6 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .display-4 {
+    font-size: 25px!important;
+  }
+  p {
+    font-size: 16px!important;
+  }
+}

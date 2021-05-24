@@ -1,0 +1,150 @@
+body {
+  background-image: url("../../../../assets/home/geometry2.png");
+}
+.center {
+  padding: 70px 0;
+  text-align: center;
+  background-image: url("../../../../assets/home/water_wallpaper.jpg");
+  border: 6px solid black;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  height: 768px;
+  width: 1024px;
+  margin-top: 20px;
+}
+
+.wallpaper {
+  background-image: url("../../../../assets/home/geometry2.png");
+  height:1000px;
+  margin-top: 0;
+}
+
+.col-xs-12 button {
+  background: url("../../../../assets/home/button purple.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  height: 95px;
+  border:none;
+}
+
+.d-flex {
+  margin-top: 100px;
+}
+
+.title {
+  margin-top: 250px;
+  font-size: 70px;
+  color: #614E78;
+}
+
+.correct-answer {
+  background: url("../../../../assets/home/button success.png")!important;
+  background-repeat: no-repeat!important;
+  background-position-x: center!important;
+  height: 95px!important;
+  border:none;
+}
+
+.next_button {
+  background: url("../../../../assets/home/next_button.png")!important;
+  background-repeat: no-repeat!important;
+  background-position-x: center!important;
+  height: 38px;
+  width: 124px;
+  border:none;
+}
+
+.wrong-answer {
+  background: url("../../../../assets/home/button error.png")!important;
+  background-repeat: no-repeat!important;
+  background-position-x: center!important;
+  height: 95px!important;
+  border:none;
+}
+
+@media screen and (max-width: 1180px){
+  .center {
+    background-image: url("../../../../assets/home/water_wallpaper_ipad.jpg");
+    border: 4px solid black;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    height: 576px;
+    width: 768px;
+  }
+  .title {
+    margin-top: 150px;
+    font-size: 55px;
+    color: #614E78;
+  }
+  .d-flex {
+    margin-top: 30px;
+  }
+  .col-xs-12 button {
+    background: url("../../../../assets/home/button_purple_ipad.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 69px;
+    border:none;
+  }
+  .correct-answer {
+    background: url("../../../../assets/home/button success_ipad.png")!important;
+    background-repeat: no-repeat!important;
+    background-position-x: center!important;
+    height: 69px!important;
+    border:none;
+  }
+
+  .wrong-answer {
+    background: url("../../../../assets/home/button error_ipad.png")!important;
+    background-repeat: no-repeat!important;
+    background-position-x: center!important;
+    height: 69px!important;
+    border:none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .wallpaper {
+    height: 380px;
+  }
+  .center {
+    background-image: url("../../../../assets/home/water_wallpaper_phone.jpg");
+    border: none;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    height: 281px;
+    width: 375px;
+  }
+  .title {
+    margin-top: 10px;
+    font-size: 40px;
+    color: #614E78;
+  }
+  .d-flex {
+    margin-top: 30px;
+  }
+  .col-xs-12 button {
+    background: url("../../../../assets/home/button_purple_phone.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 40px;
+    border:none;
+    font-size: 20px;
+    color: #FFFFFF;
+  }
+  .correct-answer {
+    background: url("../../../../assets/home/buttone success_phone.png")!important;
+    background-repeat: no-repeat!important;
+    background-position-x: center!important;
+    height: 40px!important;
+    border:none;
+  }
+
+  .wrong-answer {
+    background: url("../../../../assets/home/button error_phone.png")!important;
+    background-repeat: no-repeat!important;
+    background-position-x: center!important;
+    height: 40px!important;
+    border:none;
+  }
+}

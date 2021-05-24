@@ -1,22 +1,70 @@
-<div class="container">
-    <div class="section">
-        <div class="row columns is-multiline">
-            <div *ngFor="let card of cards" class="column is-6">
-                <div class="card" [routerLink]="card.path">
-                    <div class="card-image">
-                        <figure class="image is-16by9">
-                            <img [src]="card.image" alt="Image">
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-content">
-                                <p class="title is-4 no-padding">{{card.title}}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="sep">
+  <div class="centered">
+    <h1 class="display-3 font-weight-bold">
+      GIOCIAMO E IMPARIAMO:<br>
+      CHI HA DETTO CHE L'EDUCAZIONE ERA NOIOSA?
+    </h1>
+  </div>
 </div>
+
+<div id="cards_landscape_wrap-2">
+  <div class="container w-75">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" *ngFor="let card of cards">
+        <a [routerLink]="card.path" routerLinkActive="true">
+          <div class="card-flyer">
+            <div class="text-box">
+              <div class="image-box">
+                <img [src]="card.image" alt="" />
+              </div>
+              <div class="text-container">
+                <h6>{{card.title}}</h6>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="container w-75">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+        <img src="../../../assets/home/welcome.jpg">
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+        <h1 class="display-4 font-weight-bold">
+          Benvenuti su Primary School Website
+        </h1>
+        <p>In questo progetto ci è stato richiesto di realizzare una pagina internet per allenare dei bambini
+          di terza elementare nelle competenze specifiche dopo indicate. Il sito deve adattarsi a qualsiasi
+          dispositivo si usi per visitarlo. Inoltre, deve avere una grafica di semplice comprensione.</p>
+        <ul>In caso di problemi, contattate:</ul>
+        <li>e.daceva2002@gmail.com</li>
+        <li>scarabelt@gmail.com</li>
+        <li>uy.kara@gmail.com</li>
+      </div>
+    </div>
+  </div>
+
+
+
+<!--<div class="container">
+  <div class="section">
+    <div class="row columns is-multiline">
+      <div class="column is-6">
+        <img src="../../../assets/home/welcome.jpg">
+      </div>
+      <div class="column is-6">
+      <h1 class="display-4 font-weight-bold">
+        Benvenuti su Primary School Website
+      </h1>
+      <p>In questo progetto ci è stato richiesto di realizzare una pagina internet per allenare dei bambini
+        di terza elementare nelle competenze specifiche dopo indicate. Il sito deve adattarsi a qualsiasi
+        dispositivo si usi per visitarlo. Inoltre, deve avere una grafica di semplice comprensione.</p>
+      </div>
+    </div>
+  </div>
+</div>-->

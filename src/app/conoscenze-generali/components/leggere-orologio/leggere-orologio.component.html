@@ -1,15 +1,22 @@
-<div class="container center">
-    <h1 class="title is-3" *ngIf="answered && answeredCorrectly">Answer is correct!</h1>
-    <h1 class="title is-3" *ngIf="answered && !answeredCorrectly">Answer is wrong!<br>The correct answer
-        is {{correctAnswer}}</h1>
+<div class="wallpaper">
+  <div class="container center">
+    <h1 class="title is-3" *ngIf="!answered">Che ore sono?</h1>
+    <h1 class="title is-3" *ngIf="answered && answeredCorrectly">Risposta giusta!</h1>
+    <h1 class="title is-3" *ngIf="answered && !answeredCorrectly">Risposta sbagliata!La risposta giusta è {{correctAnswer}}</h1>
 
+    <div class="container has-text-centered ">
     <canvas #canvas width="400" height="400"></canvas>
 
-    <ngx-timepicker-field [controlOnly]="true" [format]="12" [max]="'11:59 am'"
-                          [(ngModel)]="pickedTime"></ngx-timepicker-field>
+    <div class="d-flex justify-content-center">
+      <div class="row w-75 d-flex justify-content-center">
+      <ngx-timepicker-field class="col col-xs-12 col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center mt-0" [controlOnly]="true" [format]="12" [max]="'11:59 am'"
+                            [(ngModel)]="pickedTime"></ngx-timepicker-field>
 
-    <br>
-    <button class="button is-large is-fullwidth" (click)="check()">Check</button>
-    <br>
-    <button class="button is-large is-fullwidth" (click)="next()">Next</button>
+      <button class="next_button button is-large is-fullwidth col col-xs-12 col-sm-12 col-md-12 col-lg-12 m-lg-4 m-md-1" (click)="check()">Check</button>
+      <button class="next_button button is-large is-fullwidth col col-xs-12 col-sm-12 col-md-12 col-lg-12" (click)="next()">Next</button>
+      </div>
+    </div>
+    </div>
+  </div>
 </div>
+
