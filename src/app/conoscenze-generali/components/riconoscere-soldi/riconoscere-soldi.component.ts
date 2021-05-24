@@ -27,13 +27,13 @@ export class RiconoscereSoldiComponent implements OnInit {
     }
 
     initCoins(): void {
-        this.coins.push(new Coin('0.05', 0.05, 'assets/conoscenzeGenerali/coins/005.jpg'));
-        this.coins.push(new Coin('0.1', 0.1, 'assets/conoscenzeGenerali/coins/010.jpg'));
-        this.coins.push(new Coin('0.2', 0.2, 'assets/conoscenzeGenerali/coins/020.jpg'));
-        this.coins.push(new Coin('0.5', 0.5, 'assets/conoscenzeGenerali/coins/050.jpg'));
-        this.coins.push(new Coin('1', 1, 'assets/conoscenzeGenerali/coins/1.jpg'));
-        this.coins.push(new Coin('2', 2, 'assets/conoscenzeGenerali/coins/2.jpg'));
-        this.coins.push(new Coin('5', 5, 'assets/conoscenzeGenerali/coins/5.jpg'));
+        this.coins.push(new Coin('0.05', 0.05, 'assets/conoscenzeGenerali/coins/005.png'));
+        this.coins.push(new Coin('0.1', 0.1, 'assets/conoscenzeGenerali/coins/010.png'));
+        this.coins.push(new Coin('0.2', 0.2, 'assets/conoscenzeGenerali/coins/020.png'));
+        this.coins.push(new Coin('0.5', 0.5, 'assets/conoscenzeGenerali/coins/050.png'));
+        this.coins.push(new Coin('1', 1, 'assets/conoscenzeGenerali/coins/1.png'));
+        this.coins.push(new Coin('2', 2, 'assets/conoscenzeGenerali/coins/2.png'));
+        this.coins.push(new Coin('5', 5, 'assets/conoscenzeGenerali/coins/5.png'));
     }
 
     drop(event: CdkDragDrop<Coin[]>): void {

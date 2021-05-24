@@ -1,1 +1,25 @@
-<p>misure-peso works!</p>
+<div class="wallpaper">
+  <div class="container center">
+    <div class="container has-text-centered">
+      <h1 class="title is-2">
+        {{questionAndAnswer.first}} {{unit}}
+      </h1>
+    </div>
+
+
+    <div class="container has-text-centered">
+      <button class="button is-large next next_button" (click)="newGame()">Next</button>
+    </div>
+    <div class="d-flex justify-content-center">
+      <div class="row w-75 align-items-end">
+        <div *ngFor="let answer of answers" class="col col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+          <button class="button is-fullwidth is-large" (click)="answer.registered = true"
+                  [ngClass]="{'correct-answer': answer.correct && answer.registered,
+                             'wrong-answer': !answer.correct && answer.registered}">
+            {{answer.input}} {{secondUnit}}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
