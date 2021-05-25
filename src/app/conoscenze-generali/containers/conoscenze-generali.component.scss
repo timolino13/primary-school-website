@@ -8,13 +8,13 @@
 }
 
 .wallpaper {
-  background-image: url("../../../assets/home/geometry2.png");
+  background-image: url("/assets/home/geometry2.png");
   background-repeat: repeat;
 }
 
 .sep {
   padding: 32px 0;
-  background-image: url("../../../assets/home/cultura generale.jpg");
+  background-image: url("/assets/home/cultura generale.jpg");
   background-size: 100%;
   height: 350px;
   background-repeat: no-repeat;
@@ -33,7 +33,7 @@
 
 /*----  Main Style  ----*/
 #cards_landscape_wrap-2{
-  background-image: url("../../../assets/home/geometry2.png");
+  background-image: url("/assets/home/geometry2.png");
   background-repeat: repeat;
   text-align: center;
 }

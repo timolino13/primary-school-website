@@ -52,7 +52,7 @@
 }
 
 body {
-  background-image: url("../../../../assets/home/geometry2.png");
+  background-image: url("/assets/home/geometry2.png");
 }
 
 canvas {
@@ -62,7 +62,7 @@ canvas {
 .center {
   padding: 0 0;
   text-align: center;
-  background-image: url("../../../../assets/home/sky_wallpaper.jpg");
+  background-image: url("/assets/home/sky_wallpaper.jpg");
   border: 6px solid black;
   border-radius: 5px;
   background-repeat: no-repeat;
@@ -72,13 +72,13 @@ canvas {
 }
 
 .wallpaper {
-  background-image: url("../../../../assets/home/geometry2.png");
+  background-image: url("/assets/home/geometry2.png");
   height:1000px;
   margin-top: 0;
 }
 
 .col-xs-12 button {
-  background: url("../../../../assets/home/cg_button.png");
+  background: url("/assets/home/cg_button.png");
   background-repeat: no-repeat;
   background-position-x: center;
   height: 95px;
@@ -86,7 +86,7 @@ canvas {
 }
 
 .next_button {
-  background: url("../../../../assets/home/next_button.png")!important;
+  background: url("/assets/home/next_button.png")!important;
   background-repeat: no-repeat!important;
   background-position-x: center!important;
   height: 38px;
@@ -101,7 +101,7 @@ canvas {
 }
 
 .correct-answer {
-  background: url("../../../../assets/home/cg_button_success.png")!important;
+  background: url("/assets/home/cg_button_success.png")!important;
   background-repeat: no-repeat!important;
   background-position-x: center!important;
   height: 95px!important;
@@ -109,7 +109,7 @@ canvas {
 }
 
 .next_button {
-  background: url("../../../../assets/home/next_button.png")!important;
+  background: url("/assets/home/next_button.png")!important;
   background-repeat: no-repeat!important;
   background-position-x: center!important;
   height: 38px;
@@ -118,7 +118,7 @@ canvas {
 }
 
 .wrong-answer {
-  background: url("../../../../assets/home/cg_button_error.png")!important;
+  background: url("/assets/home/cg_button_error.png")!important;
   background-repeat: no-repeat!important;
   background-position-x: center!important;
   height: 95px!important;
@@ -139,7 +139,7 @@ h2 {
 
 @media screen and (max-width: 1180px){
   .center {
-    background-image: url("../../../../assets/home/sky_wallpaper_ipad.jpg");
+    background-image: url("/assets/home/sky_wallpaper_ipad.jpg");
     border: 4px solid black;
     border-radius: 5px;
     background-repeat: no-repeat;
@@ -174,7 +174,7 @@ h2 {
     height: 380px;
   }
   .center {
-    background-image: url("../../../../assets/home/sky_wallpaper_phone.jpg");
+    background-image: url("/assets/home/sky_wallpaper_phone.jpg");
     border: none;
     border-radius: 5px;
     background-repeat: no-repeat;
@@ -199,7 +199,7 @@ h2 {
   }
 
   .next_button {
-    background: url("../../../../assets/home/next_button_phone.png")!important;
+    background: url("/assets/home/next_button_phone.png")!important;
     background-repeat: no-repeat!important;
     background-position-x: center!important;
     height: 29px;

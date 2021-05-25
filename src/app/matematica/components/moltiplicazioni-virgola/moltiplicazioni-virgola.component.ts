@@ -27,7 +27,7 @@ export class MoltiplicazioniVirgolaComponent implements OnInit {
     this.valueOne = Math.round((Math.random() * (10)) * 10) / 10;
     this.operator = 'x';
     this.valueTwo = Math.round((Math.random() * (10)) * 10) / 10;
-    this.correctAnswer = Math.round((this.valueOne * this.valueTwo)) / 100;
+    this.correctAnswer = Math.round((this.valueOne * this.valueTwo) * 100) / 100;
 
     console.log('valueOne ', this.valueOne);
     console.log('operator ', this.operator);
