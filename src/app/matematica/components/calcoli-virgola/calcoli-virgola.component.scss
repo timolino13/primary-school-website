@@ -1,6 +1,7 @@
 body {
   background-image: url("/assets/home/geometry2.png");
 }
+
 .center {
   padding: 70px 0;
   text-align: center;
@@ -15,7 +16,7 @@ body {
 
 .wallpaper {
   background-image: url("/assets/home/geometry2.png");
-  height:1000px;
+  height: 1000px;
   margin-top: 0;
 }
 
@@ -24,7 +25,7 @@ body {
   background-repeat: no-repeat;
   background-position-x: center;
   height: 95px;
-  border:none;
+  border: none;
 }
 
 .d-flex {
@@ -38,31 +39,31 @@ body {
 }
 
 .correct-answer {
-  background: url("/assets/home/button success.png")!important;
-  background-repeat: no-repeat!important;
-  background-position-x: center!important;
-  height: 95px!important;
-  border:none;
+  background: url("/assets/home/button success.png") !important;
+  background-repeat: no-repeat !important;
+  background-position-x: center !important;
+  height: 95px !important;
+  border: none;
 }
 
 .next_button {
-  background: url("/assets/home/next_button.png")!important;
-  background-repeat: no-repeat!important;
-  background-position-x: center!important;
+  background: url("/assets/home/next_button.png") !important;
+  background-repeat: no-repeat !important;
+  background-position-x: center !important;
   height: 38px;
   width: 124px;
-  border:none;
+  border: none;
 }
 
 .wrong-answer {
-  background: url("/assets/home/button error.png")!important;
-  background-repeat: no-repeat!important;
-  background-position-x: center!important;
-  height: 95px!important;
-  border:none;
+  background: url("/assets/home/button error.png") !important;
+  background-repeat: no-repeat !important;
+  background-position-x: center !important;
+  height: 95px !important;
+  border: none;
 }
 
-@media screen and (max-width: 1180px){
+@media screen and (max-width: 1180px) {
   .center {
     background-image: url("/assets/home/water_wallpaper_ipad.jpg");
     border: 4px solid black;
@@ -84,22 +85,22 @@ body {
     background-repeat: no-repeat;
     background-position-x: center;
     height: 69px;
-    border:none;
+    border: none;
   }
   .correct-answer {
-    background: url("/assets/home/button success_ipad.png")!important;
-    background-repeat: no-repeat!important;
-    background-position-x: center!important;
-    height: 69px!important;
-    border:none;
+    background: url("/assets/home/button success_ipad.png") !important;
+    background-repeat: no-repeat !important;
+    background-position-x: center !important;
+    height: 69px !important;
+    border: none;
   }
 
   .wrong-answer {
-    background: url("/assets/home/button error_ipad.png")!important;
-    background-repeat: no-repeat!important;
-    background-position-x: center!important;
-    height: 69px!important;
-    border:none;
+    background: url("/assets/home/button error_ipad.png") !important;
+    background-repeat: no-repeat !important;
+    background-position-x: center !important;
+    height: 69px !important;
+    border: none;
   }
 }
 
@@ -128,23 +129,23 @@ body {
     background-repeat: no-repeat;
     background-position-x: center;
     height: 40px;
-    border:none;
+    border: none;
     font-size: 20px;
     color: #FFFFFF;
   }
   .correct-answer {
-    background: url("/assets/home/buttone success_phone.png")!important;
-    background-repeat: no-repeat!important;
-    background-position-x: center!important;
-    height: 40px!important;
-    border:none;
+    background: url("/assets/home/buttone success_phone.png") !important;
+    background-repeat: no-repeat !important;
+    background-position-x: center !important;
+    height: 40px !important;
+    border: none;
   }
 
   .wrong-answer {
-    background: url("/assets/home/button error_phone.png")!important;
-    background-repeat: no-repeat!important;
-    background-position-x: center!important;
-    height: 40px!important;
-    border:none;
+    background: url("/assets/home/button error_phone.png") !important;
+    background-repeat: no-repeat !important;
+    background-position-x: center !important;
+    height: 40px !important;
+    border: none;
   }
 }
