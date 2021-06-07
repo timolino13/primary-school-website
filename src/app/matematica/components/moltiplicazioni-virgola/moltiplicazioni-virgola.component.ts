@@ -39,7 +39,7 @@ export class MoltiplicazioniVirgolaComponent implements OnInit {
     this.answers = [];
     this.answers.push(this.correctAnswer);
     for (let i = 0; i < 3; i++) {
-      const val = Math.floor(Math.random() * (100) + 100) / 100;
+      const val = Math.round(Math.random() * (100) + 100) / 10;
       if (val !== this.correctAnswer) {
         this.answers.push(val);
         console.log(val);
